@@ -1,2 +1,3 @@
-# Home-Lab
-Security monitoring lab using Windows, Linux, and Microsoft Sentinel
+# Home Lab 
+Setting up a Windows + Linux + SIEM lab for learning defensive security
+
