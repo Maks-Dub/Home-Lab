@@ -21,7 +21,13 @@
 - Burp Suite
 - Notepad++
 
+# Firewall
+Added several firewall changed
+- Enabled ICMP Echo Requests (Pings) 
+- Enabled ALL File and Printer Sharing rules, after which new firewall snapshot created
+
 # Snapshots
 - Fresh Install
 - Base Tools Installed - Clean
 - Fully Setup
+- Firewall Settings Changed
