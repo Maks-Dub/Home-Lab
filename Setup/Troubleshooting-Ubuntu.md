@@ -48,3 +48,12 @@ CPU - 4 Cores
 - Repeated fails leave debris 
 - Read logs not just terminal errors
 
+# Setting up Agents
+- Ubuntu machine has a DHCP IP, for an agent to work it requires a static IP which I changed using netplan
+- Windows relayed it was all successful (Confirmed in windows-side agent log so was NOT a windows issue) however did not show up on Wazuh dashboard
+    - Windows log shows as successfully connected
+    - Issue was with disk storage space, I gave Ubuntu 50GB via Virtual Box but Ubuntu was not making use of it fully
+        - Had to grow the filesystem to match the new logical volume size
+        - Verify it
+        - Restart the affected services 
+        - Check agent status again and all was up and running

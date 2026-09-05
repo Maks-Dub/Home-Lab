@@ -25,3 +25,18 @@ sudo apt update && sudo apt upgrade -y
 ## Snapshots
 - Fully Setup
 - Post-Install
+- Wazuh Agent Active
+
+1. Confirm Kali can see the server with ping
+2. Generate a new separate command from the Wazuh server this time for Linux
+3. Run the install command in Kali's terminal with:
+```bash
+sudo 
+```
+4. Enable and start the service:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable wazuh-agent
+sudo systemctl start wazuh-agent
+```
+5. Confirm on Ubuntu and check Wazuh dashboard for successful connection

@@ -162,3 +162,36 @@ Purges just the wazuh-manager package specifically
 sudo rm -rf /var/ossec
 ```
 Forcibly and permanently deletes Wazuh's main installation directory 
+
+# Commands used when adding agents 
+```bash
+sudo pvdisplay
+```
+Displays details about LVM physical volumes, used when investigating disk space issues before expanding it
+
+```bash
+sudo lsblk 
+```
+Lists all block devices (disks, partitions and logical volumes) on the system, shown as a hierarchical tree to figure out LVM structure
+
+```bash
+sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+```
+Extends the logical volume to use all remaining free space in the volume group (In the troubleshooting this made the volume grow from 24GB to the full 48GB)
+
+```bash
+df -h
+```
+Mentioned earlier however is used to verify disk space usage
+
+```bash
+sudo systemctl restart wazuh-indexer
+sudo systemctl restart wazuh-manager
+```
+Restarts affected services, used in my troubleshooting when increased disk volume
+
+```bash
+sudo /var/ossec/bin/agent_control -i 001
+```
+Checks agent status
+

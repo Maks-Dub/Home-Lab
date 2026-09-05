@@ -68,4 +68,36 @@ Password: <generated password>
 7. After install
 - Take a Virtual Box snapshot of this working state before making any further changes 
 
-Next Goal: Add Wazuh agents on the Windows and Kali VMs 
+
+# Installing Agents for the SIEM
+
+Windows
+1. Endpoints tab of Wazuh -> Deploy new agent
+2. Ceck that Windows can see the server (Ping IP)
+3. Copy install command from Wazuh
+4. Paste command in an Administrator Powershell window
+5. Start the service using:
+```powershell
+NET START WazuhSvc 
+```
+6. Confirm agent shows active in the dashboard
+
+Kali
+1. Confirm Kali can see the server with ping
+2. Generate a new separate command from the Wazuh server this time for Linux
+3. Run the install command in Kali's terminal with:
+```bash
+sudo 
+```
+4. Enable and start the service:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable wazuh-agent
+sudo systemctl start wazuh-agent
+```
+5. Confirm on Ubuntu and check Wazuh dashboard for successful connection
+
+
+# Snapshots
+- Fully-Setup
+- 2 Agents Active - Disk Fixed

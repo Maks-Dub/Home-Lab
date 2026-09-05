@@ -31,3 +31,15 @@ Added several firewall changed
 - Base Tools Installed - Clean
 - Fully Setup
 - Firewall Settings Changed
+- Wazuh Agent Active
+
+# Agent setup for Wazuh
+1. Endpoints tab of Wazuh -> Deploy new agent
+2. Ceck that Windows can see the server (Ping IP)
+3. Copy install command from Wazuh
+4. Paste command in an Administrator Powershell window
+5. Start the service using:
+```powershell
+NET START WazuhSvc 
+```
+6. Confirm agent shows active in the dashboard
