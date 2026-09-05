@@ -9,7 +9,9 @@ Purpose: Internet access for Kali tools and updates
 
 # Verification
 Inside Kali:
+```bash
 ip a
+```
 
 # Troubleshooting
 Struggled with the host-only adapter, had to disable and enable it, delete it and create it again 
