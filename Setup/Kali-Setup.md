@@ -17,7 +17,10 @@
 
 # Updates
 Ran:
-sudo apt update && sudo apt upgrade -y (Downloads all updates and bug fixes)
+```bash
+sudo apt update && sudo apt upgrade -y 
+```
+(Downloads all updates and bug fixes)
 
 ## Snapshots
 - Fully Setup
