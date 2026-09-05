@@ -21,4 +21,3 @@ Windows VM is now properly 192.168.209.4 whereas previously had IPv4 addresses b
 
 # Pings
 Opened Wireshark on Windows VM and began pinging it from the Kali VM and saw the pings being displayed
-![Wireshark-Pings](../Screenshots/Wireshark-Pings.png)
