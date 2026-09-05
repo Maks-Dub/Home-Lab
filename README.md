@@ -2,7 +2,11 @@
 Setting up a Windows + Linux + SIEM lab for learning defensive security
 
 # Next Steps
-- [x] Add Windows VM for attack practice
+
+Stage 1
+- [x] Add Windows VM 
+- [x] Add Kali VM 
 - [x] Document Nmap scans
-- Create first pentesting lab
-- [x] Add step-by-step documentation
+- [ ] Create an Ubuntu Wazuh SIEM Server
+
+Stage 2
