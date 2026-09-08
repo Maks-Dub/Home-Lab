@@ -10,7 +10,7 @@ Stage 1
 - [x] Create an Ubuntu Wazuh SIEM Server
 
 Stage 2
-- [ ] Fine-tuning Wazuh detection rules
+- [ ] Fine-tuning Wazuh detection rules, (Side Goal: See Wazuh ping a high-risk alert)
 - [ ] Set up vulnerable target VM
 - [ ] Simulate an attack from Kali against the vulnerable VM
 - [ ] Capture and document the full detection trail in Wazuh
