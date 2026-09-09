@@ -30,9 +30,9 @@ Full installation took 3 attempts, each involving a fresh Ubuntu re-install and 
     - Meet hardware requirements
     - Each failed attempt before left broken package states, need to do it all in one go
 This time:
-- Disk = 50GB
-- RAM = 8GB
-- CPU = 4 Cores
+    - Disk = 50GB
+    - RAM = 8GB
+    - CPU = 4 Cores
 
 - Google ping responds (Internet connected)
 - Ubuntu updates everything successfully with no errors
