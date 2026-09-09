@@ -101,3 +101,17 @@ sudo systemctl start wazuh-agent
 # Snapshots
 - Fully-Setup
 - 2 Agents Active - Disk Fixed
+
+# Quality-Of-Life
+- Decided to change the ubuntu terminal colours from black and white to actually enabling the built in colour options
+Used:
+```bash
+grep -n "force_color_prompt" ~/.bashrc
+``` 
+- This shows the current colour settings
+```bash
+sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/' ~/.bashrc
+source ~/.bashrc
+```
+- Overwrites the colour prompt to yes instead
+
