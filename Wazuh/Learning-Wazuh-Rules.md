@@ -29,8 +29,10 @@ sudo grep -rn "MS_FREQ" /var/ossec/ruleset/
 ```
 - Finds the $MS_FREQ value
 
-<var name="MS_FREQ">8</var 
-
+(Output:)
+```bash
+<var name="MS_FREQ">8</var
+```
 - Appears most frequently meaning the variable value is 8
 
 So for rule 60204, this means 8 matching failed-login events within 240 seconds triggers the level 10 alert.
