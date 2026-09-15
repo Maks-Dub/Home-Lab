@@ -115,3 +115,16 @@ source ~/.bashrc
 ```
 - Overwrites the colour prompt to yes instead
 
+
+- Want to be able to use clipboard on Ubuntu VM, after some trial and error attempting to install guest additions decided to use SSH on my PC 
+```bash
+sudo systemctl status ssh
+```
+- Checks SSH is running on Ubuntu
+
+```powershell
+ssh user@192.168
+```
+- SSH into Ubuntu VM on Windows terminal
+
+- Copy and Paste now works through Windows terminal (Previously had no idea GUI or lacktherof was responsible for clipboard not working)
