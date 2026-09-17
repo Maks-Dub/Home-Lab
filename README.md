@@ -11,7 +11,7 @@ Stage 1
 
 Stage 2
 - [x] Fine-tuning Wazuh detection rules, (Side Goal: See Wazuh ping a high-risk alert)
-- [ ] Set up vulnerable target VM
+- [ ] Set up vulnerable target VM (Metasploitable2)
 - [ ] Simulate an attack from Kali against the vulnerable VM
 - [ ] Capture and document the full detection trail in Wazuh
 - [ ] Update Kali agent to match manager version (v4.9.2)
