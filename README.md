@@ -15,7 +15,7 @@ Stage 2
 - [x] Simulate an attack from Kali against the vulnerable VM
 - [x] Capture and document the full detection trail in Wazuh (WIP- Metasploitable Legacy Software)
 - [x] Update Kali agent to match manager version (v4.9.2)
-- [ ] Auto-block via Kali-attacks-Windows brute force
+- [x] Auto-block via Kali-attacks-Windows brute force
 - [ ] Custom Wazuh detection rule
 - [ ] Configure FIM on a watched directory
 - [ ] SSH brute-force simulation
