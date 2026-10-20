@@ -61,7 +61,7 @@ net user backdoor /delete
 ```
 
 ## TROUBLESHOOTING
-- For me an event was fired but not the custom one I had created, it matched an already built in rule (60109), this was because my rule meant "only evaluate my rule if 60106 already matched first" but 60106 is "Windows logon success" which is a different event category entirely. Since 60106 didn't fire for an account-creation event my rule condition were never checked, the fix however was simple:
+- An event was fired but not the custom one I had created, it matched an already built in rule (60109), this was because my rule meant "only evaluate my rule if 60106 already matched first" but 60106 is "Windows logon success" which is a different event category entirely. Since 60106 didn't fire for an account-creation event my rule condition were never checked, the fix however was simple:
 
 ```bash
 sudo nano /var/ossec/etc/rules/local_rules.xml
@@ -75,4 +75,3 @@ then change:
 to:
 ```xml
 <if_sid>60109</if_sid>
-
